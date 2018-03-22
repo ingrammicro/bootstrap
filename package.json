@@ -1,7 +1,7 @@
 {
   "author": "https://github.com/angular-ui/bootstrap/graphs/contributors",
   "name": "angular-ui-bootstrap",
-  "version": "2.5.4",
+  "version": "2.5.8",
   "description": "Native AngularJS (Angular) directives for Bootstrap",
   "homepage": "http://angular-ui.github.io/bootstrap/",
   "keywords": [
@@ -22,12 +22,13 @@
   ],
   "main": "index.js",
   "scripts": {
+    "postinstall": "grunt build html2js",
     "demo": "grunt after-test && static dist -a 0.0.0.0 -H '{\"Cache-Control\": \"no-cache, must-revalidate\"}'",
     "test": "grunt"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular-ui/bootstrap.git"
+    "url": "https://github.com/ingrammicro/bootstrap.git"
   },
   "devDependencies": {
     "angular": "1.6.1",
